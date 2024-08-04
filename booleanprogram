@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    bool result;
+
+    // Input two integers
+    printf("Enter first integer: ");
+    scanf("%d", &a);
+    printf("Enter second integer: ");
+    scanf("%d", &b);
+
+    // Logical AND
+    result = (a && b);
+    printf("%d AND %d is %d\n", a, b, result);
+
+    // Logical OR
+    result = (a || b);
+    printf("%d OR %d is %d\n", a, b, result);
+
+    // Logical NOT
+    result = !a;
+    printf("NOT %d is %d\n", a, result);
+
+    result = !b;
+    printf("NOT %d is %d\n", b, result);
+
+    // Relational operations combined with logical operators
+    result = (a > 0) && (b > 0);
+    printf("%d > 0 AND %d > 0 is %d\n", a, b, result);
+
+    result = (a > 0) || (b > 0);
+    printf("%d > 0 OR %d > 0 is %d\n", a, b, result);
+
+    return 0;
+}
